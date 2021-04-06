@@ -1,0 +1,29 @@
+==CHANGELOG==
+
+===================
+VERSION 0.0.025
+* Creating:
+	Elements
+	Assigning forces
+	    Joint forces
+	    Distributed forces
+	Assigning restraints
+
+VERSION 0.0.030
+* Post Processing:
+	Running analysis
+	Getting results
+	    Selecting load combinations
+
+
+
+Nota:
+	OBJETiVO generacion de versiones
+	a,b,c,d,e,f,g,h,i,j, k, l, m, n, o, p, q, r, s, t, u, w, x, y, z, 
+	1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25, 
+
+	ea00EtabsAPI.py
+	e: Aplicacion (Etabs) (ID Aplicacion)
+	a: letra del abecedario para el OBJETiVO (ID)
+	0: version avance/actualizacion de la aplicacion (version)
+	EtabsAPI: nombre predecesor (ejemplo: __etabs)
