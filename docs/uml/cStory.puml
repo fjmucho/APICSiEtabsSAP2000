@@ -1,0 +1,28 @@
+' Supported Formats
+' *.wsd, *.pu, *.puml, *.plantuml, *.iuml
+' para poder visualiza, alt+d
+
+@startuml
+scale 2
+
+class cStory {
+    +GetElevation()
+    +GetGUID()
+    +GetHeight()
+    +GetMasterStory()
+    +GetNameList()
+    +GetSimilarTo()
+    +GetSplice()
+    +GetStories()
+    +GetStories_2()
+    +SetElevation()
+    +SetGUID()
+    +SetHeight()
+    +SetMasterStory()
+    +SetSimilarTo()
+    +SetSplice()
+    +SetStories()
+    +SetStories_2()
+}
+
+@enduml

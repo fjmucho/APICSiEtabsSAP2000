@@ -1,0 +1,12 @@
+@startuml
+scale 2
+
+class cFile {
+    +NewBlank()
+    +NewGridOnly()
+    +NewSteelDeck()
+    +OpenFile()
+    +Save()
+}
+
+@enduml

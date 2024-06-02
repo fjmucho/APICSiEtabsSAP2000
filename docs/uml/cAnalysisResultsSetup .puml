@@ -1,0 +1,28 @@
+@startuml
+scale 2
+
+class cAnalysisResultsSetup {
+	+DeselectAllCasesAndCombosForOutput()
+	+GetCaseSelectedForOutput()
+	+GetComboSelectedForOutput()
+	+GetOptionBaseReactLoc()
+	+GetOptionBucklingMode()
+	+GetOptionDirectHist()
+	+GetOptionModalHist()
+	+GetOptionModeShape()
+	+GetOptionMultiStepStatic()
+	+GetOptionMultiValuedCombo()
+	+GetOptionNLStatic()
+	+SetCaseSelectedForOutput()
+	+SetComboSelectedForOutput()
+	+SetOptionBaseReactLoc()
+	+SetOptionBucklingMode()
+	+SetOptionDirectHist()
+	+SetOptionModalHist()
+	+SetOptionModeShape()
+	+SetOptionMultiStepStatic()
+	+SetOptionMultiValuedCombo()
+	+SetOptionNLStatic()
+}
+
+@enduml

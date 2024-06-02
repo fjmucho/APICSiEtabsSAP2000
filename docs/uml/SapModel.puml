@@ -1,0 +1,45 @@
+' Supported Formats
+' *.wsd, *.pu, *.puml, *.plantuml, *.iuml
+' para poder visualiza, alt+d
+
+@startuml
+scale 2
+
+class SapModel {
+    +Analyze: string
+    +AreaElm: string
+    +AreaObj: string
+    +Diaphragm: string
+    +EditArea: string
+    +EditFrame: string
+    +EditGeneral: string
+    +EditPoint: string
+    +File: string
+    +FrameObj: string
+    +RespCombo: string
+    +Results : string 
+    +registrationClosed: boolean
+    +GetDatabaseUnits()
+    +GetDatabaseUnits_2()
+    +GetMergeTol()
+    +GetModelFilename()
+    +GetModelFilepath()
+    +GetModelIsLocked()
+    +GetPresentCoordSystem()
+    +GetPresentUnits()
+    +GetPresentUnits_2()
+    +GetProgramInfo()
+    +GetProjectInfo()
+    +GetVersion()
+    +InitializeNewModel()
+    +SetMergeTol()
+    +SetModelIsLocked()
+    +SetPresentUnits()
+    +SetPresentUnits_2()
+    +SetProjectInfo()
+    +TreeIsUpdateSuspended()
+    +TreeResumeUpdateData()
+    +TreeSuspendUpdateData()
+}
+
+@enduml

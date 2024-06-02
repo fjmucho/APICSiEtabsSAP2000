@@ -1,0 +1,28 @@
+@startuml
+scale 2
+
+class cLoadCases {
+	+Buckling  
+	+DirHistLinear  
+	+DirHistNonlinear  
+	+HyperStatic  
+	+ModalEigen  
+	+ModalRitz  
+	+ModHistLinear  
+	+ModHistNonlinear  
+	+ResponseSpectrum  
+	+StaticLinear  
+	+StaticNonlinear  
+	+StaticNonlinearStaged  
+
+	+ChangeName()
+	+Count()
+	+Delete()
+	+GetNameList()
+	+GetTypeOAPI()
+	+GetTypeOAPI_1()
+	+SetDesignType()
+
+}
+
+@enduml

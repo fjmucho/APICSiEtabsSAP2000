@@ -1,0 +1,22 @@
+' Supported Formats
+' *.wsd, *.pu, *.puml, *.plantuml, *.iuml
+' para poder visualiza, alt+d
+
+@startuml
+scale 2
+
+class GetActiveObject {
+}
+
+class SapModel {
+}
+
+class cFile {
+}
+
+
+GetActiveObject --|>SapModel
+' SapModel <|-- GetActiveObject
+' cFile <|-- SapModel
+SapModel --|> cFile
+@enduml
