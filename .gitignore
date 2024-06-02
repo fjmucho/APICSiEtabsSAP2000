@@ -75,7 +75,6 @@ dist/
 downloads/
 Output/
 # docs/
-docs/uml/*.puml
 eggs/
 .eggs/
 lib/
@@ -171,6 +170,7 @@ ENV/
 *.toc
 *.xdv
 *.fdb_latexmk
+*.puml
 
 # securiry
 test/etabs_api/test.*
