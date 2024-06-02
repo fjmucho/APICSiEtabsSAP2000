@@ -75,7 +75,7 @@ dist/
 downloads/
 Output/
 # docs/
-docs/um/*.*
+docs/uml/*.puml
 eggs/
 .eggs/
 lib/
