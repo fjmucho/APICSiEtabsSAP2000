@@ -30,12 +30,12 @@ En sistemas Windows, la consola se denomina símbolo del sistema (Command prompt
 utilizada en sistemas basados en NT (Windows XP, Windows 7, Windows 8, Windows 10, Windows Server) 
 para ejecutar comandos MS-DOS (.exe de 16 bits) y otros como scripts con formato .bat y .sys.
 
-Windows PowerShell, es otra paliación que integra Windows 10, es una interfaz de consola con posibilidad de 
+Windows PowerShell, es otra apliación que integra Windows, es una interfaz de consola con posibilidad de 
 escritura y unión de comandos por medio de instrucciones. Esta interfaz de consola está diseñada para su uso 
 por parte de administradores de sistemas, con el propósito de automatizar tareas o realizarlas de forma más controlada.
 
 Windows Terminal, es una interfaz de línea de comandos con múltiples pestañas que Microsoft ha desarrollado 
-para Windows 10, como reemplazo de la consola de Windows. Puede ejecutar cualquier aplicación de línea de 
+para Windows, como reemplazo de la consola de Windows. Puede ejecutar cualquier aplicación de línea de 
 comandos, incluidos todos los emuladores de terminal de Windows, en una pestaña separada. 
 
 ### Terminal de Mac – Terminal.
@@ -67,7 +67,7 @@ y por su puesto que podemos ponemos las instrucciones para ejecutar Python y Vis
 
 |Aplicación	|Ejemplo de Ruta|
 |-----------|----|
-|`Etabs`	|C:\Program Files\Computers and Structures\ETABS 19\ETABS.exe
+|`Etabs`	|C:\\Program Files\\Computers and Structures\\ETABS 19\\ETABS.exe
 |…|…
 |`Python`	|C:\Python39\python.exe
 |`Visual Studio Code`	|C:\Users\UserName\AppData\Local\Programs\Microsoft VS Code\Code.exe
@@ -75,10 +75,10 @@ Tabla 1.2.
 
 El siguiente grafico se muestra la ejecución de Etabs, para las demás aplicaciones funciona de la misma forma.
 
-![windows](./img/fig02_powershell.png)
+![windows](./img/fig02_powershell.png)  
 Figura 1.3.
 
-![windows](./img/fig03_etabs.jpg)
+![windows](./img/fig03_etabs.jpg)  
 Figura 1.4.
 
 Entonces este concepto de ir recorriendo de un directorio a otro, crear, eliminar, y a la ves ejecutar 
@@ -108,9 +108,7 @@ Se ha desarrollado para ser lo más consistente posible entre los varios product
 `Nota`: más información en CSI API ETABS v1.
 
 ### Visual Studio Code.
-Es un editor de código fuente desarrollado por Microsoft para Windows, Linux y macOS. Incluye soporte para depuración, control de Git integrado, resaltado de sintaxis, finalización de código inteligente, fragmentos de código y refactorización de código. Es gratuito y de código abierto.
-
-`Nota`: más información en vscode.
+Es un editor de código abierto desarrollado por Microsoft para plataformas Windows, Linux y macOS. Incluye soporte para depuración, control de Git integrado, resaltado de sintaxis, finalización de código inteligente, fragmentos de código y refactorización de código.
 
 ### Python.
 Python es un lenguaje de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código. Se trata de un lenguaje de programación multiparadigma, ya que soporta parcialmente la orientación a objetos, programación imperativa y, en menor medida, programación funcional.

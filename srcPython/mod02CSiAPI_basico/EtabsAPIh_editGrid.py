@@ -19,7 +19,8 @@ def get_story_data(smodel=None):
     splice_above = [] #SpliceAbove
     splice_height=[] #SpliceHeight
     color=0.0
-    (nos_stories, story_nms, story_eles, story_hgts, is_master_story, similar_to_story, splice_above, splice_height,color)=smodel.Story.GetStories(
+    (nos_stories, story_nms, story_eles, story_hgts, is_master_story, similar_to_story, \
+      splice_above, splice_height,color) = smodel.Story.GetStories(
         nos_stories, story_nms, story_eles, story_hgts, 
         is_master_story, similar_to_story, splice_above, splice_height)
 
