@@ -1,0 +1,19 @@
+site_name:  Introducción a API de CSI
+
+language: 'ES'
+
+nav: 
+  - "Contenido":
+    - 1. Indice: 'index.md'
+    - 2. Introduccion: 'd01introduccion.md'
+    - 3. Lenguajes de soprtados: 'd02lenguajes.md'
+    - 4. Visual Basic y API CSI: 'd03vb_etabs.md'
+    - 5. Python y API CSI: 'd04python_etabs.md'
+    - 6. Matlab y API CSI: 'd05matlab_etabs.md'
+    - 7. C# y API CSI: 'd06cshar_etabs.md'
+
+theme: readthedocs
+
+python:
+  install:
+    - requirements: requirements.txt
