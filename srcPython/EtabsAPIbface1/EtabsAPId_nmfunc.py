@@ -30,7 +30,7 @@ if __name__ == '__main__':
     on_status, eobj = False, None
     # ============== codigo que ejecuta por defecto a etbas =============
     from EtabsAPIb_zconn_funcion import *
-    on_status, eobj = attach_to_instance() # instalcia por ejecucion
+    on_status, eobj = attach_to_instance() # instancia por ejecucion
     estado_manual = False
     if on_status==False:
         ruta_programa =""
