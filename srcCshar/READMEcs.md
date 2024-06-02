@@ -1,6 +1,6 @@
 # Requerimientos 
-* notnet
-* 
+* dotnet languaje C#
+* vscode 
 
 ## intructions | instrucciones
 ### console apps projects
