@@ -1,4 +1,4 @@
-# Breve Introducción a API de CSI y Autodesk
+# Breve Introducción a la API de CSI y Autodesk
 
 ## AutocatAPI
 Easy to use functions written in Cshar/Python/VisualBasic/Matlab for the Autodesk Autocat API
@@ -30,15 +30,15 @@ functions or send suggestions for tools that Engineers may find useful.
 - Connect to the Autocat API using python, ...
 - Connect to the Revit API using python, ...
 
-### Dependencies Cshar(c#) and Visual Basic (.vb)
+### Dependencies Cshar and Visual Basic
 
 * [.Net](https://dotnet.microsoft.com/) version 5.0.201+
 
-### Dependencies Matlab (.m))
+### Dependencies Octave/Matlab
 
 * [Matlab](https://la.mathworks.com/products/matlab.html) version 8.0.2+
 
-### Dependencies python (.py)
+### Dependencies python
 
 The following packages are required:
 
