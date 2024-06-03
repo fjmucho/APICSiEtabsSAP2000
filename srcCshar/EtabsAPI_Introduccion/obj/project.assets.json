@@ -1,0 +1,66 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net8.0": []
+  },
+  "packageFolders": {
+    "C:\\Users\\io\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "G:\\Ciencias de Ingenieria Civil & Arquitectura\\API_CSIs Etabs Sap2000\\APICSiEtabsSAP2000\\srcCshar\\IntroduccionEtabsAPI\\IntroduccionEtabsAPI.csproj",
+      "projectName": "IntroduccionEtabsAPI",
+      "projectPath": "G:\\Ciencias de Ingenieria Civil & Arquitectura\\API_CSIs Etabs Sap2000\\APICSiEtabsSAP2000\\srcCshar\\IntroduccionEtabsAPI\\IntroduccionEtabsAPI.csproj",
+      "packagesPath": "C:\\Users\\io\\.nuget\\packages\\",
+      "outputPath": "G:\\Ciencias de Ingenieria Civil & Arquitectura\\API_CSIs Etabs Sap2000\\APICSiEtabsSAP2000\\srcCshar\\IntroduccionEtabsAPI\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\io\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,3 +1,13 @@
+# libreria pythonnet
+
+http://pythonnet.github.io/
+
+# Librerias
+* os
+* sys
+* virtualenv
+* comtypes 
+
 # Temario 1.
 
 - conexion a ETABS

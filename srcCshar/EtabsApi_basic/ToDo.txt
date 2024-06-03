@@ -1,0 +1,5 @@
+﻿- assign loads distrubuted and concentrated load  // Done 
+- seismic with codes   
+- analysis 
+- design 
+- optimization algorithm

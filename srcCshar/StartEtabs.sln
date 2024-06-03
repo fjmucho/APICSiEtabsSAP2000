@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartEtabs", "StartEtabs\StartEtabs.csproj", "{A7F0DE4D-1455-4BA0-BD86-31D2F344611F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testNotCore", "testNotCore\testNotCore.csproj", "{B3544E87-17DD-46CD-ADB0-8585B6B24653}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EtabsApi", "EtabsApi\EtabsApi.csproj", "{967EA2DD-E4A3-4AA3-B262-C58638B6A647}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7F0DE4D-1455-4BA0-BD86-31D2F344611F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7F0DE4D-1455-4BA0-BD86-31D2F344611F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7F0DE4D-1455-4BA0-BD86-31D2F344611F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7F0DE4D-1455-4BA0-BD86-31D2F344611F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3544E87-17DD-46CD-ADB0-8585B6B24653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3544E87-17DD-46CD-ADB0-8585B6B24653}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3544E87-17DD-46CD-ADB0-8585B6B24653}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3544E87-17DD-46CD-ADB0-8585B6B24653}.Release|Any CPU.Build.0 = Release|Any CPU
+		{967EA2DD-E4A3-4AA3-B262-C58638B6A647}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{967EA2DD-E4A3-4AA3-B262-C58638B6A647}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{967EA2DD-E4A3-4AA3-B262-C58638B6A647}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{967EA2DD-E4A3-4AA3-B262-C58638B6A647}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96D2EAAA-A420-4BA0-B1D2-D1376380FEE6}
+	EndGlobalSection
+EndGlobal
