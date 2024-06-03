@@ -3,8 +3,7 @@
 """Description:
 
 """
-import os
-import sys
+import os, sys
 import comtypes.client
 
 try:

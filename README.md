@@ -48,6 +48,6 @@ The following packages are required:
 
 ## Current Versions
 
-v.0.0.2 First Release
+v.0.0.2
 
 ## Contact Details

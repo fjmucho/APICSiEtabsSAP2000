@@ -1,4 +1,5 @@
 numpy
+comtypes
 matplotlib
 sphinx
 sphinx_rtd_theme
