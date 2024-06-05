@@ -1,4 +1,4 @@
-# Fundamentos de programacion [`C#`, `VB`, `C++`, `F#`, `Python`, `Matlab`]
+# Fundamentos de programacion [`C#`, `VB`, `C++`, `Python`, `Octave|Matlab`]
 
 
 ### Fundamentos
@@ -366,7 +366,7 @@ vresult = vnuma - vnumb % Subtraction
 vresult = vnuma * vnumb % Multiplication
 vresult = vnuma / vnumb % Division
 ```
-EN lenguaje Python (.py) y Ruby (con peque;a modificacion)
+En lenguaje Python (.py) y Ruby (con peque;a modificacion)
 ```python
 # Python
 vresult = None
@@ -433,7 +433,6 @@ vnuma ^ vnumb       # Logical EXCLUSIVE OR
 not vnuma       # Logical NOT
 ```
 
-
 ### Variables
 
 Assign variables:
@@ -441,12 +440,12 @@ Assign variables:
 ```cs
 // Code cshar 
 ```
-
+En lenguaje Octave
 ```matlab
 % Assign variables
 vnuma = 10;
 ```
-
+En lenguaje python
 ```python
 # Assign variables
 vnuma = 10
@@ -456,12 +455,12 @@ Multi assign:
 ```cs
 // Code cshar 
 ```
-
+En lengauje Octave o Matlab
 ```matlab
 % matlab tiene soporte
 % Unsupported
 ```
-
+En lengauje Python
 ```python
 # Multi assign
 # vnuma = 10 
@@ -474,7 +473,9 @@ vnuma, vnumb, vnumc = 10, 20, 30
 
 #### if-else if-else
 
-Only `if`:
+**Only `if`:**
+
+En legnuaje C#
 ```cs
 // Code cshar 
 using System;
@@ -522,7 +523,7 @@ namespace UsandoCshar
     }
 }
 ```
-
+En lenguaje Octave
 ```matlab
 % matlab
 % Using if
@@ -533,7 +534,7 @@ if xts == ".exe"
 end
 disp("no es una aplicacion ejecutable para windows");
 ```
-
+En lenguaje Python
 ```python
 # python
 text = "C:\Program Files\Computers and Structures\ETABS 19\ETABS.exe"
@@ -600,6 +601,7 @@ else:
 ```
 
 #### For loop
+En lenguaje C#
 ```cs
 // Code cshar 
 using System;
@@ -648,14 +650,14 @@ class MainClass
 	}
 }
 ```
-
+En lenguaje Octave
 ```matlab
 % for loop matlab
 for i = 1:10
     disp(i)
 end
 ```
-
+En lenguaje Python
 ```python
 # for loop python
 for i in range(1,11):
@@ -663,6 +665,7 @@ for i in range(1,11):
 ```
 
 #### While loop
+En lenguaje C#
 ```cs
 // Code cshar 
 using System;
@@ -698,7 +701,7 @@ class MainClass
 
 }
 ```
-
+En lenguaje Octave
 ```matlab
 % while loop matlab
 a = 1
@@ -707,7 +710,7 @@ while a < 10
     a = a + 1;
 end
 ```
-
+En lengauje Python
 ```python
 # while loop python
 a = 1
@@ -717,6 +720,7 @@ while a < 10:
 ```
 
 #### Try - Catch
+En lenguaje C#
 ```cs
 // Code cshar 
 using System;
@@ -752,7 +756,7 @@ namespace EnumsYEstructs {
 	}
 }
 ```
-
+En lenguaje Octave
 ```matlab
 % on matlab
 try
@@ -761,7 +765,7 @@ catch err
     % On failure
 end
 ```
-
+En lenguaje python
 ```python
 # on python
 try:

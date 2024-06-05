@@ -4,12 +4,12 @@
 **************** 0 ******************
 @date: 06/04/21 to 20/04/21
 @author: F. JMucho. <fjmucho0@gmail.com>
-@Description: implelemntacion en una funcion
+@Description:
 **************** 0 ******************
 """
 import os, sys
 
-def saveAsFile(smodel=None, APIPath='C:\\CSi_ETABS_API_Example', name_file='example.edb'):
+def saveAsFile(smodel=None, APIPath='C:\\CSi_API_Example', name_file='example.edb'):
 
     if not os.path.exists(APIPath):
         try: os.makedirs(APIPath)
@@ -81,7 +81,7 @@ if __name__ == '__main__':
     new_model_ax = newMNewGridOnly(smodel, grid_values)
 
     # ===== codigo para Guardar el archivo o modelo creado =====
-    ruta_directorio = "C:\\CSi_ETABS_API_Example"
+    ruta_directorio = "C:\\CSi_API_Example"
     nombre_Archivo = "API_1-002save.edb"
     on_status, newSapModel = saveAsFile(smodel, ruta_directorio, nombre_Archivo)
     if on_status==False: print("No se pudo guardar...")

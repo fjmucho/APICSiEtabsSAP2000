@@ -4,7 +4,7 @@
 **************** 0 ******************
 @date: 06/04/21 to 20/04/21
 @author: F. JMucho. <fjmucho0@gmail.com>
-@Description: implelemntacion en una funcion
+@Description: 
 **************** 0 ******************
 """
 import os, sys
@@ -35,7 +35,7 @@ def connect_default_to_etabs():
     ETABSObject = None
     try:
         ETABSObject = helper.CreateObjectProgID("CSI.ETABS.API.ETABSObject") 
-        print("Coneccion esitosa!.")
+        print("Coneccion exitosa!.")
     except (OSError, comtypes.COMError):
         print("Cannot start a new instance of the program(etabs).")
         return False, ETABSObject

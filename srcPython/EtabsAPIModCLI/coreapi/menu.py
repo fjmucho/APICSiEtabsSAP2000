@@ -2,10 +2,8 @@
 # -*- coding: utf-8 -*-
 """ 
 # ************* 1 **********
-EtabsAPI illustration: 0.0.1 
 Autor: Francisco J.Mucho
 Date: 25/03/21
-Time: 
 # ************* 1 **********
 """
 from collections import OrderedDict

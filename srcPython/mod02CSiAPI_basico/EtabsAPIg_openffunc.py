@@ -4,7 +4,7 @@
 **************** 0 ******************
 @date: 06/04/21 to 20/04/21
 @author: F. JMucho. <fjmucho0@gmail.com>
-@Description: implelemntacion en una funcion
+@Description:
 **************** 0 ******************
 """
 def validate_extend(extencion=""):
@@ -71,7 +71,7 @@ if __name__ == '__main__':
     smodel = eobj.SapModel
 
     nombre_archivo = "API_1-002open.EDB"
-    archivo = 'C:\\CSi_ETABS_API_Example\\' + nombre_archivo
+    archivo = 'C:\\CSi_API_Example\\' + nombre_archivo
     ok, newSapModel = openFile(smodel,  archivo)
 
 

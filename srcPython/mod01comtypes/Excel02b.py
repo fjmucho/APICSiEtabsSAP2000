@@ -1,5 +1,5 @@
 import sys
-import comtypes
+# import comtypes
 from comtypes.client import CreateObject
 
 try:

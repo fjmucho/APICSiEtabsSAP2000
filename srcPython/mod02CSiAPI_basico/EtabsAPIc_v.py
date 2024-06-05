@@ -25,8 +25,7 @@ import comtypes.client
 version, myVersionNumber, VersionNumberMayor = "", 0.0, 0
 # definamos tres variables para nombrePrograma, versionPrograma, nivelPrograma.
 nombrePrograma, versionPrograma, nivelPrograma = "", "", ""
-EtabsObject=None
-smodel=None
+EtabsObject,smodel=None,None
 
 try:
 	EtabsObject = comtypes.client.GetActiveObject("CSI.ETABS.API.ETABSObject")

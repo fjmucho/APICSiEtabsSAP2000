@@ -33,7 +33,6 @@ rutaEspecifica = False
 # si la bandera anterior se establece en True, entonces debe especificar la ruta a ETABS a continuación
 ProgramPath = "C:\\Program Files\\Computers and Structures\\ETABS 19\\ETABS.exe"
 
-
 try:
     #get the active ETABS object
     ETABSObject = comtypes.client.GetActiveObject("CSI.ETABS.API.ETABSObject")
@@ -136,12 +135,12 @@ ret = smodel.PointObj.SetLoadForce('3', 'LCASE2', Value2, True, 'Global', 0)
 
 #save model | guardar nuestro modelo
 #full path to the model, set it to the desired path of your model
-APIPath = 'C:\\CSi_ETABS_API_Example'
+APIPath = 'C:\\CSi_API_Example'
 if not os.path.exists(APIPath):
-    try:
+    try: 
         os.makedirs(APIPath) #| intenta crear un directorio.
-    except OSError:
-        print("Error: "+OSError) #| si no se tiene permiso laza un error.
+        # os.makedirs(APIPath, mode='0o666', exist_ok=True)
+    except OSError: print("Error: "+OSError) #| si no se tiene permiso laza un error.
 ModelPath = APIPath + os.sep + 'tutorial3.edb'
 ret = smodel.File.Save(ModelPath)
 # 'display the filename of the model

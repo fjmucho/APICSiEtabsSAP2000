@@ -2,12 +2,11 @@
 # -*- coding: UTF-8 -*-
 """
 Autor: F. JMucho. <fjmucho0@gmail.com>
-Date: 01/04/2021, time: 7:00am to 12:00pm
-Programacion funcional estructurada: Refactorizacion.
+Date: 01/04/2021
+Refactorizacion.
 Description:
     aquii se implementara las dependencias y la refactorizacion preliminar...
     este modulo esta en desarrollo ... no es funcional al 100% aun....
-    claro, estas funciones son posibles refactorizaciones...
 """
 import os, sys
 import comtypes.client
@@ -95,7 +94,7 @@ def attach_to_instance():
 def save_file_model(SapModel):
     # uso del ee05EtabsAPI_saveFile.py
     #full path to the model, set it to the desired path of your model
-    APIPath = 'C:\\CSi_ETABS_API_Example'
+    APIPath = 'C:\\CSi_API_Example'
     if not os.path.exists(APIPath):
         try:
             os.makedirs(APIPath) #| intenta crear un directorio.
@@ -108,7 +107,7 @@ def open_file_model():
     # uso del ef06EtabsAPI_openFile.py
     # 'open an existing file - If no file exists, run the Save example first.
     try:
-        fileName = APIPath = 'C:\\CSi_ETABS_API_Example\\exAPI_1-001.edb'
+        fileName = APIPath = 'C:\\CSi_API_Example\\exAPI_1-001.edb'
     except (OSError, comtypes.COMError):
         print(f"No se puede abrir {comtypes.COMError}")
         sys.exit(-1)

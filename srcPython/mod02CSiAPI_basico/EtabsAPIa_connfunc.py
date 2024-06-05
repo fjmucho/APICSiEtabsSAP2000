@@ -4,7 +4,7 @@
 **************** 0 ******************
 @date: 06/04/21 to 20/04/21
 @author: F. JMucho. <fjmucho0@gmail.com>
-@Description: implelemntacion en una funcion
+@Description: 
 **************** 0 ****************** 
 """
 import sys
@@ -30,7 +30,7 @@ if __name__ == '__main__':
     if on_status==False: exit()
 
     print("La sesión actual de este programa se conectó haciendo uso de la API. \
-Se recomenda que cierre este programa utilizando el programa desde el que se inició.")
+Se recomenda que cierre medinte el uso de la API.")
     input("Enter para cerrar Etabs!")
     # Close the program | Cerrar la aplicacion
     eobj.ApplicationExit(False)

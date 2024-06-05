@@ -63,7 +63,7 @@ En la tabla siguiente se muestran las conversiones de tipos que se pueden realiz
 |datetime64	|VT_DATE
 ...
 
-## Interacción(conexión) Python(.py, .pyw, ...) y Etabs(.edb).
+## Interacción(conexión) Python(\*.py, \*.pyw, ...) y Etabs (\*.edb), SAP2000 (\*.sdb).
 Lo primero que tenemos que hacer es conectarnos con Etbas a través de Python con su librería Comtype.client
 
 ### Conexion Python a Etabs.
@@ -74,8 +74,10 @@ import comtypes.client
 import sys
 
 try:
-    # Connecting | coneccion
+    # Connecting | coneccion para etabs
     ETABSObject = comtypes.client.GetActiveObject("CSI.ETABS.API.ETABSObject")
+    # Connecting | coneccion para SAP2000
+    # mySapObject = comtypes.client.GetActiveObject("CSI.SAP2000.API.SapObject")
     print("Conexion exitosa!.")
 except (OSError, comtypes.COMError):
     # No running instance of the program found or failed to attach.
@@ -83,6 +85,7 @@ except (OSError, comtypes.COMError):
     sys.exit(-1)
 ````
 > comtypes.client.GetActiveObject("CSI.ETABS.API.ETABSObject").
+
 descripcion ...
 
 > OSError.

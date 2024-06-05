@@ -2,10 +2,8 @@
 # -*- coding: utf-8 -*-
 """ 
 # ************* 0 *************
-EtabsAPI illustration: 0.0.1 
 Autor: Francisco J.Mucho
 Date: 25/03/21
-Time:
 Modulo: funciones de ayuda.
 # ************* 0 *************
 """

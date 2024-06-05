@@ -19,8 +19,8 @@ import comtypes.client
 def OpenFile():
     # 'open an existing file - If no file exists, run the Save example first.
     try:
-        # fileName = APIPath = 'C:\\CSi_ETABS_API_Example\\exAPI_1-001.edb'
-        fileName = APIPath = 'C:\\CSi_ETABS_API_Example\\API_1-001.$et'
+        # fileName = APIPath = 'C:\\CSi_API_Example\\exAPI_1-001.edb'
+        fileName = APIPath = 'C:\\CSi_API_Example\\API_1-001.$et'
     except (OSError, comtypes.COMError):
         print(f"No se puede abrir {comtypes.COMError}")
         sys.exit(-1)
@@ -36,5 +36,5 @@ def validar(ruta=""):
         print(ejecutable)
         return True
     return False
-texto = "C:\\Program Files\\Computers and Structures\\ETABS 19\\ETABS.exe"
+texto = "C:\\Program Files\\Computers and Structures\\ETABS 21\\ETABS.exe"
 validar(texto)

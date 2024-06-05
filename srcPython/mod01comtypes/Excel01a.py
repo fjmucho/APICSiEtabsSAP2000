@@ -4,8 +4,7 @@
 Para usar esta script tiene que estar ejecutandose Excel.
 1. Nos conectamos
 """
-import sys
-# import | importar la libreria requerida
+
 import comtypes.client
 
 try:

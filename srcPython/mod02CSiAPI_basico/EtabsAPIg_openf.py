@@ -38,7 +38,7 @@ smodel = ETABSObject.SapModel
 fileName=""
 # 'open an existing file - If no file exists, run the Save example first.
 try:
-	fileName = 'C:\\CSi_ETABS_API_Example\\API_1-002open.EDB'
+	fileName = 'C:\\CSi_API_Example\\API_1-002open.EDB'
 except (OSError, comtypes.COMError):
     print(f"No se puede abrir {comtypes.COMError}")
     sys.exit(-1)

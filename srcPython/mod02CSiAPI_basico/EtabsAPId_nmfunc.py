@@ -4,7 +4,7 @@
 **************** 0 ******************
 @date: 06/04/21 to 20/04/21
 @author: F. JMucho. <fjmucho0@gmail.com>
-@Description: implelemntacion en una funcion
+@Description:
 **************** 0 ****************** 
 """
 def newMNewBlank(smodel=None):

@@ -74,7 +74,6 @@ develop-eggs/
 dist/
 downloads/
 Output/
-# docs/
 eggs/
 .eggs/
 lib/

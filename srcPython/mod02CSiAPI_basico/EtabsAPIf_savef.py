@@ -43,7 +43,7 @@ ret = smodel.SetProjectInfo("Project Name TestEtabsAPI", "API Testing")
 ret = smodel.SetProjectInfo("My Item", "My Data")
 
 #full path to the model, set it to the desired path of your model
-APIPath = 'C:\\CSi_ETABS_API_Example'
+APIPath = 'C:\\CSi_API_Example'
 if not os.path.exists(APIPath):
     try: os.makedirs(APIPath) #| intenta crear un directorio.
     except OSError: print("Error: "+OSError) #| si no se tiene permiso laza un error.

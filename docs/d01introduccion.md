@@ -1,4 +1,4 @@
-# *Breve Introducción a Etabs API con Python.*
+# *Breve Introducción a API de CSi y Autodesk.*
 
 **Descripción**
 
@@ -9,10 +9,10 @@ configurar el entorno de desarrollo y te damos una ayuda para crear tus
 propias sincronizaciones con aplicacion con `ETABS`, `SAP2000` y `Python`.
 
 ## Requerimientos.
-*	Persona Capacitado en Programación y manejo de Programas de Ingeniería.
+*	Capacitado en Programación y manejo de Programas de Ingeniería.
 *	Computadora o laptop con suficiente capacidad
 *	Plataforma Windows o Mac
-*	Etabs 19,18,17,16 o en su versión más reciente.
+*	Etabs 21, 19, 18 ,17 o en su versión más reciente.
 *	Python 3.x, o en su versión más reciente.
 *	Librería os, sys, PyQt6, pandas, openpyxl, y comtypes para Python.
 *	Editor Visual Studio Code, Sublime text 3, PyCharm u otro.

@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 '''
 # ************* 3 **********
-EtabsAPI illustration: 0.0.1 
 Autor: Francisco J.Mucho
 Date: 25/03/21
 # ************* 3 **********
