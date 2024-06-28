@@ -38,7 +38,7 @@ http://pythonnet.github.io/
 
 # Temario 2.
 
-- Unlocking model 		| Abriendo modelo (hace referencia al candadito de etabs)
+- Unlocking model 		| Abriendo modelo (hace referencia al candado)
 
 - Unit Preferences 		| Establecer Preferencias de Unidad
 - Materials 			| Establecer materiales

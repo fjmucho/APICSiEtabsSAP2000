@@ -1,0 +1,16 @@
+G:\Ciencias de Ingenieria Civil & Arquitectura\API_CSIs Etabs Sap2000\APICSiEtabsSAP2000\srcCshar\CSiAPI_Intro\bin\Debug\net8.0\CSiAPI_Intro.exe
+G:\Ciencias de Ingenieria Civil & Arquitectura\API_CSIs Etabs Sap2000\APICSiEtabsSAP2000\srcCshar\CSiAPI_Intro\bin\Debug\net8.0\CSiAPI_Intro.deps.json
+G:\Ciencias de Ingenieria Civil & Arquitectura\API_CSIs Etabs Sap2000\APICSiEtabsSAP2000\srcCshar\CSiAPI_Intro\bin\Debug\net8.0\CSiAPI_Intro.runtimeconfig.json
+G:\Ciencias de Ingenieria Civil & Arquitectura\API_CSIs Etabs Sap2000\APICSiEtabsSAP2000\srcCshar\CSiAPI_Intro\bin\Debug\net8.0\CSiAPI_Intro.dll
+G:\Ciencias de Ingenieria Civil & Arquitectura\API_CSIs Etabs Sap2000\APICSiEtabsSAP2000\srcCshar\CSiAPI_Intro\bin\Debug\net8.0\CSiAPI_Intro.pdb
+G:\Ciencias de Ingenieria Civil & Arquitectura\API_CSIs Etabs Sap2000\APICSiEtabsSAP2000\srcCshar\CSiAPI_Intro\obj\Debug\net8.0\CSiAPI_Intro.GeneratedMSBuildEditorConfig.editorconfig
+G:\Ciencias de Ingenieria Civil & Arquitectura\API_CSIs Etabs Sap2000\APICSiEtabsSAP2000\srcCshar\CSiAPI_Intro\obj\Debug\net8.0\CSiAPI_Intro.AssemblyInfoInputs.cache
+G:\Ciencias de Ingenieria Civil & Arquitectura\API_CSIs Etabs Sap2000\APICSiEtabsSAP2000\srcCshar\CSiAPI_Intro\obj\Debug\net8.0\CSiAPI_Intro.AssemblyInfo.cs
+G:\Ciencias de Ingenieria Civil & Arquitectura\API_CSIs Etabs Sap2000\APICSiEtabsSAP2000\srcCshar\CSiAPI_Intro\obj\Debug\net8.0\CSiAPI_Intro.csproj.CoreCompileInputs.cache
+G:\Ciencias de Ingenieria Civil & Arquitectura\API_CSIs Etabs Sap2000\APICSiEtabsSAP2000\srcCshar\CSiAPI_Intro\obj\Debug\net8.0\CSiAPI_Intro.sourcelink.json
+G:\Ciencias de Ingenieria Civil & Arquitectura\API_CSIs Etabs Sap2000\APICSiEtabsSAP2000\srcCshar\CSiAPI_Intro\obj\Debug\net8.0\CSiAPI_Intro.dll
+G:\Ciencias de Ingenieria Civil & Arquitectura\API_CSIs Etabs Sap2000\APICSiEtabsSAP2000\srcCshar\CSiAPI_Intro\obj\Debug\net8.0\refint\CSiAPI_Intro.dll
+G:\Ciencias de Ingenieria Civil & Arquitectura\API_CSIs Etabs Sap2000\APICSiEtabsSAP2000\srcCshar\CSiAPI_Intro\obj\Debug\net8.0\CSiAPI_Intro.pdb
+G:\Ciencias de Ingenieria Civil & Arquitectura\API_CSIs Etabs Sap2000\APICSiEtabsSAP2000\srcCshar\CSiAPI_Intro\obj\Debug\net8.0\CSiAPI_Intro.genruntimeconfig.cache
+G:\Ciencias de Ingenieria Civil & Arquitectura\API_CSIs Etabs Sap2000\APICSiEtabsSAP2000\srcCshar\CSiAPI_Intro\obj\Debug\net8.0\ref\CSiAPI_Intro.dll
+G:\Ciencias de Ingenieria Civil & Arquitectura\API_CSIs Etabs Sap2000\APICSiEtabsSAP2000\srcCshar\CSiAPI_Intro\obj\Debug\net8.0\CSiAPI_Intro.csproj.AssemblyReference.cache

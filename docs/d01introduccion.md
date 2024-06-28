@@ -6,7 +6,7 @@ Esta Aplicacion es el inicio para, aprender a reducir el tiempo de generación d
 modelo, y ademas dá la ventaja de disminuir errores al momento de ingresar los 
 datos mediante técnicas basicas de modelamiento. Te guiaremos paso a paso a 
 configurar el entorno de desarrollo y te damos una ayuda para crear tus 
-propias sincronizaciones con aplicacion con `ETABS`, `SAP2000` y `Python`.
+propias sincronizaciones con aplicacion con `ETABS`, `SAP2000`, `BRIDGE` con `Python`.
 
 ## Requerimientos.
 *	Capacitado en Programación y manejo de Programas de Ingeniería.
@@ -149,7 +149,7 @@ comtypes es un paquete `COM` de Python puro basado en la biblioteca de funciones
 ## referecias.
 	
 * [CSI ETBAS](https://www.csiamerica.com/products/etabs/enhancements)
-* [CSI](https://www.csiespana.com/)
+<!-- * [CSI](https://www.csiespana.com/) -->
 * [Python](https://www.python.org/)
 
 

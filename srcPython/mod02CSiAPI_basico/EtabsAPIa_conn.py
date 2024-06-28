@@ -18,7 +18,6 @@ import comtypes.client
 
 # Definicion de variables para su uso
 ETABSObject = None
-
 try:
     # Connecting | coneccion
     ETABSObject = comtypes.client.GetActiveObject("CSI.ETABS.API.ETABSObject")

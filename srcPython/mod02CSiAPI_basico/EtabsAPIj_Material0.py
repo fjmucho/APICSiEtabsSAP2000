@@ -14,12 +14,12 @@ except (OSError, comtypes.COMError):
     
 smodel = ETABSObject.SapModel
 smodel.SetModelIsLocked(False)
-res = smodel.InitializeNewModel()
+response_status = smodel.InitializeNewModel()
 
 # === FORMAS DE INICIALIZAR UN MODELO ===
-# res = smodel.File.NewBlank()
-res = smodel.File.NewGridOnly(4,12,12,4,4,24,24)
-# res = smodel.File.NewSteelDeck(4,12.0,12.0,4,4,24.0,24.0)
+# response_status = smodel.File.NewBlank()
+response_status = smodel.File.NewGridOnly(4,12,12,4,4,24,24)
+# response_status = smodel.File.NewSteelDeck(4,12.0,12.0,4,4,24.0,24.0)
 
 # Unit Preferences | Preferencias de Unidad
 N_mm_C = 6 #kN_m_c
@@ -34,8 +34,8 @@ for nombre in dir(smodel.PropMaterial):
 
 
 # 'add ASTM A706 rebar material property in United states Region
-ret = smodel.PropMaterial.AddMaterial("CONC34", 2, "Spain", "HA-20", "Grade 60")
-print(ret)
+response_status = smodel.PropMaterial.AddMaterial("CONC34", 2, "Spain", "HA-20", "Grade 60")
+print(response_status)
 
 # Materials | materiales
 smodel.PropMaterial.SetMaterial("CONC35", 2, -1, "Comentario...")
@@ -44,21 +44,21 @@ print(smodel.PropMaterial.GetMaterial("CONC35"))
 print(smodel.PropMaterial.GetMaterial(mat_name_list[1][0]))
 
 # 'change name of material property
-ret = smodel.PropMaterial.ChangeName("CONC35", "CONC36")
+response_status = smodel.PropMaterial.ChangeName("CONC35", "CONC36")
 
 
-ret = smodel.PropMaterial.SetOConcrete_1("CONC35", 35, False, 0, 1, 2, 0.0022, 0.0052, -0.1, 0, 0)
+response_status = smodel.PropMaterial.SetOConcrete_1("CONC35", 35, False, 0, 1, 2, 0.0022, 0.0052, -0.1, 0, 0)
 # 'assign other properties
-ret = smodel.PropMaterial.SetOConcrete("CONC37", 5, False, 0, 1, 2, 0.0022, 0.0052)
+response_status = smodel.PropMaterial.SetOConcrete("CONC37", 5, False, 0, 1, 2, 0.0022, 0.0052)
 
 # 'specify temps at which properties will be provided
 MyTemp = [0,50,100]
-ret = smodel.PropMaterial.SetTemp("Steel", 3, MyTemp)
+response_status = smodel.PropMaterial.SetTemp("Steel", 3, MyTemp)
 
 
 input("Enter para cerrar Etabs!")
 ETABSObject.ApplicationExit(True)
 
 # clean up variables | limpiamos las variables y eliminamos
-ETABSObject, smodel, res = None, None, None
+ETABSObject, smodel, response_status = None, None, None
 del ETABSObject, smodel, res

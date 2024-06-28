@@ -33,38 +33,21 @@ rutaEspecifica = True
 # si la bandera anterior se establece en True, entonces debe especificar la ruta a ETABS a continuación
 ProgramPath = "C:\\Program Files\\Computers and Structures\\ETABS 19\\ETABS.exe"
 
+#create API helper object
+helper = comtypes.client.CreateObject('ETABSv1.Helper')
+helper = helper.QueryInterface(comtypes.gen.ETABSv1.cHelper)
+if rutaEspecifica:
+    try:
+        #'create an instance of the ETABS object from the specified path
+        ETABSObject = helper.CreateObject(ProgramPath)
+        print("Coneccion esitosa!.\nVia Coneccion Manual")
+    except (OSError, comtypes.COMError):
+        print("Cannot start a new instance of the program from " + ProgramPath)
+        sys.exit(-1)
 
-try:
-    #get the active ETABS object
-    ETABSObject = comtypes.client.GetActiveObject("CSI.ETABS.API.ETABSObject")
-    print("Coneccion exitosa!.\nadjuntando a una instancia existente.")
-except (OSError, comtypes.COMError):
-    print("No se encontró ninguna instancia en ejecución del programa(Etabs).")
-
-    print("Tratando de Ejecutar etabs!.")
-    #create API helper object
-    helper = comtypes.client.CreateObject('ETABSv1.Helper')
-    helper = helper.QueryInterface(comtypes.gen.ETABSv1.cHelper)
-    if rutaEspecifica:
-        try:
-            #'create an instance of the ETABS object from the specified path
-            ETABSObject = helper.CreateObject(ProgramPath)
-            print("Coneccion esitosa!.\nVia Coneccion Manual")
-        except (OSError, comtypes.COMError):
-            print("Cannot start a new instance of the program from " + ProgramPath)
-            sys.exit(-1)
-    else:
-        try: 
-            #create an instance of the ETABS object from the latest installed ETABS
-            ETABSObject = helper.CreateObjectProgID("CSI.ETABS.API.ETABSObject") 
-            print("Coneccion esitosa!.")
-        except (OSError, comtypes.COMError):
-            print("Cannot start a new instance of the program.")
-            sys.exit(-1)
-
-    print("Ejecutando etabs!.")
-    #start ETABS application | ejecutar la Aplicacion ETABS.
-    ETABSObject.ApplicationStart()
+print("Ejecutando etabs!.")
+#start ETABS application | ejecutar la Aplicacion ETABS.
+ETABSObject.ApplicationStart()
 
 #create SapModel object | crea instancia del objeto SapModel
 smodel = ETABSObject.SapModel

@@ -34,7 +34,8 @@ def get_story_data(smodel=None):
                            is_master_story[j],
                            similar_to_story[j],
                            splice_above[j],
-                           splice_height[j]]);
+                           splice_height[j]
+                        ]);
     return story_data;
 
 def set_story_data(smodel=None):

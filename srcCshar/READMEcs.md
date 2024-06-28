@@ -5,7 +5,7 @@
 ## intructions | instrucciones
 ### console apps projects
 
-````bash
+```bash
 > mkdir Projects
 > cd Projects
 > dotnet new console -o myApp
@@ -14,13 +14,13 @@
 > dotnet run
 # si tiene muchos scripts/archivos y se quiere ejecutar por script
 > dotnet run Program.cs
-````
+```
 
 ## create new project | crear nuevo proyecto
-````shel
-> dotnet new console -o IntroduccionEtabsAPI
+````cmd
+> dotnet new console -o CSiAPI_Intro
 
-Esto es .NET 5.0.
+Esto es .NET 5.0.s
 ---------------------
 Versión del SDK: 5.0.201
 
@@ -45,9 +45,9 @@ Getting ready...
 The template "Console Application" was created successfully.
 
 Processing post-creation actions...
-Running 'dotnet restore' on IntroduccionEtabsAPI\IntroduccionEtabsAPI.csproj...
+Running 'dotnet restore' on CSiAPI_Intro\CSiAPI_Intro.csproj...
   Determinando los proyectos que se van a restaurar...
-  Se ha restaurado C:\Users\Francisco\Documents\PyEtabsAPI\src_Cshar\IntroduccionEtabsAPI\IntroduccionEtabsAPI.csproj (en 202 ms).
+  Se ha restaurado C:\Users\Francisco\Documents\PyEtabsAPI\src_Cshar\CSiAPI_Intro\CSiAPI_Intro.csproj (en 202 ms).
 Restore succeeded.
 
 > cd myApp

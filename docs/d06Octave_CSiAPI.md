@@ -1,0 +1,3 @@
+## Interacción(conexión) Octave o Matlab(.m, .fig, ...) y Etabs(.edb, ...).
+
+Por el momento solo me limitare a C# y Pyhon luego quisa ponga algo de documentacion ....

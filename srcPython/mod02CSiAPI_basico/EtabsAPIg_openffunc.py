@@ -10,8 +10,7 @@
 def validate_extend(extencion=""):
     ext = None
     ext = extencion[-4:].lower()
-    if ext == ".edb":
-        return True
+    if ext == ".edb": return True
     return False
 def openFile(smodel=None, name_file=""):
     # if os.path.isfile(name_file):
