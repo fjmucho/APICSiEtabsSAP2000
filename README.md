@@ -55,4 +55,4 @@ The following packages are required:
 - 
 
 ## Referencias
-- https://hakan-keskin.medium.com/
+<!-- - https://hakan-keskin.medium.com/ -->
