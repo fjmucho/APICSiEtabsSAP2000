@@ -1,4 +1,0 @@
-# 
-
-# funciones o clases
-

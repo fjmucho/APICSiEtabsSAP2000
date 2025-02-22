@@ -1,3 +1,12 @@
+# CSiAPI para Python
+
+## Instalar y configurar la librerias
+Antes de comenzar, asegúrese de tener la comtypesbiblioteca instalada, ya que es necesaria para conectar Python con aplicaciones basadas en COM como SAP2000, ETABS, Bridge y otros que soporte.
+
+```shell
+pip install comtypes
+```
+
 ## Ampliando el uso de la Librería Comtype.
 El paquete `comtypes` facilita el acceso e implementación de interfaces `COM` personalizadas y basadas en envíos.
 
@@ -66,7 +75,7 @@ En la tabla siguiente se muestran las conversiones de tipos que se pueden realiz
 ## Interacción(conexión) Python(\*.py, \*.pyw, ...) y Etabs (\*.edb), SAP2000 (\*.sdb).
 Lo primero que tenemos que hacer es conectarnos con Etbas a través de Python con su librería `comtype.client`
 
-### Conexion Python a Etabs.
+### Conexion Python a Etabs o SAP2000.
 
 ````py
 # eb01EtabsAPI.py, algoritmo para la conexion.
@@ -74,16 +83,17 @@ import comtypes.client
 import sys
 
 try:
-    # Connecting | coneccion para etabs
-    ETABSObject = comtypes.client.GetActiveObject("CSI.ETABS.API.ETABSObject")
     # Connecting | coneccion para SAP2000
-    # mySapObject = comtypes.client.GetActiveObject("CSI.SAP2000.API.SapObject")
+    mySapObject = comtypes.client.GetActiveObject("CSI.SAP2000.API.SapObject")
+    # # Connecting | coneccion para ETABS
+    # ETABSObject = comtypes.client.GetActiveObject("CSI.ETABS.API.ETABSObject")
     print("Conexion exitosa!.")
 except (OSError, comtypes.COMError):
     # No running instance of the program found or failed to attach.
     print("No se encontró ninguna instancia en ejecución del programa(Etabs).")
     sys.exit(-1)
 ````
+
 > comtypes.client.GetActiveObject("CSI.ETABS.API.ETABSObject").
 
 Se le pasa como argumento al metodo `GetActiveObject()` un Objeto, en este caso el de ETABS.

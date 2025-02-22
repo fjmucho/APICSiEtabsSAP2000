@@ -1,0 +1,130 @@
+<style>
+    html {
+        background-color: #f7f7f7;
+        margin: 16px;
+    }
+    body {
+        color: #545454;
+        font-family: "Open Sans", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+    ul {
+        padding-left: 1.2rem;
+    }
+    li { margin: 2px; }
+    ul.topic {
+        margin-top: 0;
+        padding-left: 1.5rem;
+    }
+    ul.topic ul {
+        margin: 0.2em 0;
+    }
+    h1 {
+        font-size: 2.0rem;
+        margin: 0;
+    }
+    h2 {
+        color: #f05;
+        font-size: 1.4rem;
+        margin: 1em 0 0.1em 0;
+    }
+    h3 {
+        color: #37f;
+        font-size: 1.05rem;
+        margin: 1em 0 0.25em 0.5em;
+        font-weight: bold;
+    }
+    a {
+        color: #000;
+    }
+    article { display: block; }
+    .release-date, .forum-link {
+        font-size: 0.9rem;
+        font-style: italic;
+        color: #;
+    }
+</style>
+
+<h1>Development Channel Changelog</h1>
+
+<article class="current">
+<h2>0.1.0 (Build 0100)</h2>
+<div class="release-date">04 Octuber 2021</div>
+<ul>
+    <li>Mac: on development</li>
+</ul>
+</article>
+
+<article class="current">
+<h2>Build 015</h2>
+<div class="release-date">... 2021</div>
+<ul>
+    <li>Windows: Console App</li>
+</ul>
+</article>
+
+<article class="current">
+<h2>Build 007</h2>
+<div class="release-date">VERSION 0.0.7  2021-03-29 08:00pm to 12:00am aprox...</div>
+<ul>Defining:
+    <li>Materials</li>
+    <li>Sections</li>
+    <li>Cases</li>
+    <li>Combinations</li>
+</ul>
+</article>
+
+<article>
+<h2>Build 006</h2>
+<div class="release-date">VERSION 0.0.6 2021-03-21 10:00pm to 3:25am aprox... | 
+    2021-03-24 6:00am to 3:25pm aprox...</div>
+<ul>
+    <li>metodos <strong>cFile</strong></li>
+        + SapModel.File.NewBlank() | 1ra forma de iniciar un nuevo modelo </br> 
+        + SapModel.File.NewGridOnly() | 2da froma de crear un nuevo modelo </br> 
+        + SapModel.File.NewSteelDeck() | 3ra forma de crear un nuevo modelo </br> 
+        + Save() </br> 
+        + OpenFile()
+    <li>- [<strong>ed03EtabsAPI.py ... eg6EtabsAPI.py</strong>] creacion y refactoriacion de los anteriores mas las pruebas.</li>
+        + SapModel.GetProgramInfo() | muestra informacion del programa</br> 
+        + SapModel.InitializeNewModel() | inicializa un nuevo modelo
+    <li>- [<strong>ea00EtabsAPI.py ... ec02EtabsAPI.py</strong>] creacion y pruebas.</li>
+        Connecting to running instance of ETABS </br> 
+        Unit preferences </br> 
+        Unlocking model
+</ul>
+</article>
+
+<article>
+<h2>Build 001</h2>
+<div class="release-date">VERSION 0.0.1 2021-03-20 10:00pm to 3:25am aprox...</div>
+<ul>
+    <li>Review of API notation</li>
+</ul>
+</article>
+
+<h2>Build 000 before of start</h2>
+<div class="release-date">VERSION 0.0.0 2021-03-17 10:00 pm to 3:00 am aprox...</div>
+<ul>
+    <li>Objects</li>
+    class, and methods
+    <li>Moduls</li>
+    from, import
+    <li>Functiones</li>
+    def: 
+    <li>User Input</li>
+    input
+    <li>Loops</li>
+    For, and While
+    <li>Controls</li>
+    if-Else
+    <li>Var Types</li>
+    Int, Float, Strings, Bool, List, Dictionary, Operators Logic
+</ul>
+</article>
+<hr>
+
+<footer>
+    Copyright (C) 2021 Francisco J. M. fjmucho0@gmail.com
+    </br><a href="https://portal.unap.edu.pe/">Universidad Nacional del altiplano de Puno</a>
+    </br><a href="https://mit-license.org/">License MIT</a>
+</footer>

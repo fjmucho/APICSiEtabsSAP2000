@@ -4,13 +4,23 @@
 | ----------------------------------------------------------------------- 
 | Cercha o armadura. - ejecucion en API de CSi
 | -----------------------------------------------------------------------
+| description: EL script esta preparado para que se ejecute tanto en SAP200 y ETABS
+|              y es posible ejecutar con algunas modificaciones en otras como BRIDGE 
+|              y SAFE, ............................................................. 
+|              Si gustas puedes crear una copia en github en una rama secundaria y 
+|              actualizar a tu gusto con las otras aplicaciones de CSiAPI.
 | ref: C:\\Program Files\\Computers and Structures\\ETABS 17\\CSI API ETABS v1.chm
+|      youtube: ....
 | author: fjmucho0@gmail.com
 | date created: 04/02/2021 
 | date updated: 06/07/2024
 """
 
+import os, sys
 import numpy as np
+import comtypes.client
+
+# | definicion de Geometria de la estructura ----------------------------
 
 # add point object
 nodes = np.array([
@@ -60,15 +70,11 @@ ne = np.shape(elems)[0]
 
 
 # Indicar el programa a usar
-connect_to = 2; #1 para SAP2000 y 2 para ETABS
+connect_to = 1; #1 para SAP2000 y 2 para ETABS
 # Variable para definir una instancia manual para el programa y definir la ruta.
 porRuta = False # 0=False o 1=True
 
-# | ----------------------------------------------------------------------- 
-# | Comandos y funciones de API CSI
-# | -----------------------------------------------------------------------
-import os, sys
-import comtypes.client
+# | Comandos y funciones de API CSI ---------------------------------------
 
 smodel, response_status = None, None
 conn = {};
@@ -76,8 +82,8 @@ conn = {};
 if connect_to == 1:  # SAP2000
     name_app="SAP2000"
     conn = {
-        'app_ruta': "C:\\Program Files\\Computers and Structures\\SAP2000 23\\SAP2000.exe",
-        'app_adjunto': "CSI.SAP2000.API.SapObject",
+        'app_ruta': "C:\\Program Files\\Computers and Structures\\SAP2000 26\\SAP2000.exe",
+        'app_adjunto': f"CSI.SAP2000.API.SapObject",
         'app_helper': 'SAP2000v1.Helper'
     }
 elif (connect_to == 2): # ETABS
@@ -268,3 +274,6 @@ connect_to_app, smodel = None, None
 print(f"Axial Force\n{Axial[np.newaxis].T}")
 print(f"Reaction forces\n{Reactions}")
 print(f"Joint Displacement\n{Displacement}")
+
+del connect_to_app, smodel, response
+sys.exit()

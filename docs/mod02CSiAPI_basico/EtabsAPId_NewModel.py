@@ -55,10 +55,10 @@ for nombre in dir(smodel.File.New2DFrame):
 # === FORMAS DE INICIALIZAR UN MODELO ===
 #create new blank model | crea una nueva hoja en blanco
 resUnit = smodel.File.NewBlank()
-# # create grid-only template model
-# resUnit = smodel.File.NewGridOnly(4,12,12,4,4,24,24)
+# # create grid-only template model - [pisos, ]
+# resUnit = smodel.File.NewGridOnly(4, 12,12, 4,4, 24,24)
 # # create steel deck template model
-# resUnit = smodel.File.NewSteelDeck(4,12.0,12.0,4,4,24.0,24.0)
+# resUnit = smodel.File.NewSteelDeck(4, 12.0,12.0, 4,4, 24.0,24.0)
 
 
 # Unit Preferences | Preferencias de Unidad

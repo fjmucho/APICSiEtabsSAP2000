@@ -2,10 +2,9 @@ import comtypes.client
 import sys
 
 class ConnectCSiAPI(object):
-    # metodo contructor
     conn = {};
-    def __init__(self):
-
+    # metodo contructor
+    def __init__(self, connect_to):
         helper = comtypes.client.CreateObject('ETABSv1.Helper')
         helper = helper.QueryInterface(comtypes.gen.ETABSv1.cHelper)
         conection = select_app();
@@ -33,6 +32,7 @@ class ConnectCSiAPI(object):
     def not_connect(self): 
         print("No se pudo conectar...")
         sys.exit(-1)
+
     def connect_manually_to_etabs(self, ruta_programa=""):
         print("Tratando de Ejecutar etabs!.")
         
@@ -47,6 +47,7 @@ class ConnectCSiAPI(object):
         print("Ejecutando etabs!.")
         ETABSObject.ApplicationStart()
         return True, ETABSObject
+    
     def connect_default_to_etabs(self):
         print("Tratando de Ejecutar etabs!.")
         helper = comtypes.client.CreateObject('ETABSv1.Helper')
@@ -61,6 +62,7 @@ class ConnectCSiAPI(object):
         print("Ejecutando etabs!.")
         ETABSObject.ApplicationStart()
         return True, ETABSObject
+    
     def attach_to_instance():
         """ coneccion a etabs """
         on_status = False

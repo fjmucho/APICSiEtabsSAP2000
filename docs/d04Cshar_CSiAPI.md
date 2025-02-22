@@ -1,1 +1,1 @@
-## Interacción(conexión) CShare(.cs) y Etabs(.edb).
+## Interacción(conexión) CShare(.cs) con Etabs(.edb) y SAP2000 (.sdb).
