@@ -1,11 +1,5 @@
 # Breve Introducción a la API de CSI y Autodesk
 
-## AutocatAPI
-Easy to use functions written in Cshar/Python/VisualBasic/Matlab for the Autodesk Autocat API
-
-## RevitAPI
-Easy to use functions written in Cshar/Python/VisualBasic/Matlab for the Autodesk Revit API
-
 ## Sap2000API
 Easy to use functions written in Cshar/Python/VisualBasic/Matlab for the CSI Sap2000 API
 
@@ -27,8 +21,6 @@ functions or send suggestions for tools that Engineers may find useful.
 
 - Connect to the Excel(Microsoft Office) API using python
 - Connect to the Etabs API using python, C#, C++, ...
-- Connect to the Autocat API using python, ...
-- Connect to the Revit API using python, ...
 
 ### Dependencies Cshar and Visual Basic
 
