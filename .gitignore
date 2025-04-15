@@ -50,6 +50,7 @@ desktop.ini
 inno/
 *.p
 *.iss
+*dato.txt
 # *.ipynb
 
 # Byte-compiled / optimized / DLL files

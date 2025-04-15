@@ -41,6 +41,8 @@ El proyecto está organizado en las siguientes carpetas:
 
 
 ## References
-<!-- - https://hakan-keskin.medium.com/ -->
-
+- 1. https://github.com/kandluis/sap2000
+- 2. https://github.com/ebrahimraeyat/etabs_api
+- 3. https://github.com/mitchell-tesch/pytabs
+- 4. https://pypi.org/project/E030/
 
