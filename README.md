@@ -17,6 +17,21 @@ This project is intended to help those who are looking to develop there own prog
 supplement their design workflows. People are encouraged to help contribute with their own
 functions or send suggestions for tools that Engineers may find useful. 
 
+
+## Estructura del Proyecto
+
+El proyecto está organizado en las siguientes carpetas:
+
+```plaintext
+📁 APICSiEtabsSAP2000
+│
+├── 📁 docs         # docuementation of the code writed in this repository for C#, Python, ...
+├── 📁 srcCshar     # Source code using C# for API
+├── 📁 srcOctave    # Source code using Octave for API
+├── 📁 srcPython    # Source code using Python for API
+└── README.md       # Este archivo
+```
+
 ### Current Capabilities
 
 - Connect to the Excel(Microsoft Office) API using python
@@ -33,10 +48,29 @@ The following packages are required:
 * [comtypes](https://pypi.org/project/comtypes/) version 1.1.9+
 * [pandas](https://pandas.pydata.org/) version 1.2.3+
 * [PyQt6](https://wiki.qt.io/Qt_6.0_Release) version 6.0.3+
+* NumPy
+* Matplotlib
+* EZDXF
 
-## Citar.
+Puedes instalar las dependencias ejecutando el siguiente comando para el caso de python:
 
-- 
+```bash
+pip install -r requirements.txt
+```
+acerca de como usar en cada lenguaje esta en el directorio `docs` mas informacion.
 
-## Referencias
+## Uso del Proyecto
+
+### Clonar el repositorio
+
+Primero, clona el repositorio en tu máquina local:
+
+```bash
+git clone https://github.com/fjmucho/APICSiEtabsSAP2000.git
+cd APICSiEtabsSAP2000
+```
+
+## References
 <!-- - https://hakan-keskin.medium.com/ -->
+
+
