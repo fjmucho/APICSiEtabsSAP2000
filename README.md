@@ -59,9 +59,7 @@ pip install -r requirements.txt
 ```
 acerca de como usar en cada lenguaje esta en el directorio `docs` mas informacion.
 
-## Uso del Proyecto
-
-### Clonar el repositorio
+### Uso del Proyecto - Clonar el repositorio
 
 Primero, clona el repositorio en tu máquina local:
 
