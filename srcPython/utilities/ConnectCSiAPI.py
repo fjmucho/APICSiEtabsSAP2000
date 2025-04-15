@@ -12,14 +12,14 @@ class ConnectCSiAPI(object):
     @property
     def select_app(self):
         if connect_to == 1:  # SAP2000
-            print("SAP2000")
+            app_csi = "SAP2000"
             self.conn = {
                 'app_ruta': "C:\\Program Files\\Computers and Structures\\SAP2000 23\\SAP2000.exe",
                 'app_adjunto': "CSI.SAP2000.API.SapObject",
                 'app_helper': 'SAP2000v1.Helper'
                 }
         elif (connect_to == 2): # ETABS
-            print("ETABS")
+            app_csi = "ETABS"
             self.conn = {
                 'app_ruta': "C:\\Program Files\\Computers and Structures\\ETABS 21\\ETABS.exe",
                 'app_adjunto': "CSI.ETABS.API.ETABSObject",
@@ -57,7 +57,7 @@ class ConnectCSiAPI(object):
             ETABSObject = helper.CreateObjectProgID("CSI.ETABS.API.ETABSObject") 
             print("Coneccion exitosa!.")
         except (OSError, comtypes.COMError):
-            print("Cannot start a new instance of the program(etabs).")
+            print(f"Cannot start a new instance of the program(etabs).")
             return False, ETABSObject
         print("Ejecutando etabs!.")
         ETABSObject.ApplicationStart()
