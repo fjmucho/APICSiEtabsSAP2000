@@ -1,4 +1,4 @@
-# Breve Introducción a la API de CSI y Autodesk
+# Breve Introducción a la API de CSi
 
 ## Sap2000API
 Easy to use functions written in Cshar/Python/VisualBasic/Matlab for the CSI Sap2000 API
@@ -36,13 +36,3 @@ El proyecto está organizado en las siguientes carpetas:
 
 - Connect to the Excel(Microsoft Office) API using python
 - Connect to the Etabs API using python, C#, C++, ...
-
-
-
-
-## References
-- 1. https://github.com/kandluis/sap2000
-- 2. https://github.com/ebrahimraeyat/etabs_api
-- 3. https://github.com/mitchell-tesch/pytabs
-- 4. https://pypi.org/project/E030/
-

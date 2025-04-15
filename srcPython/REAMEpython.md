@@ -28,3 +28,9 @@ Primero, clona el repositorio en tu máquina local:
 git clone https://github.com/fjmucho/APICSiEtabsSAP2000.git
 cd APICSiEtabsSAP2000
 ```
+
+## References
+- 1. github [sap2000](https://github.com/kandluis/sap2000)
+- 2. github [etabs_api](https://github.com/ebrahimraeyat/etabs_api)
+- 3. github [pytabs](https://github.com/mitchell-tesch/pytabs)
+- 4. https://pypi.org/project/E030/
