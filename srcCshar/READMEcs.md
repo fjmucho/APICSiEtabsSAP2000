@@ -3,6 +3,11 @@
 * vscode 
 
 ## intructions | instrucciones
+
+### Dependencies Cshar and Visual Basic
+
+* [.Net](https://dotnet.microsoft.com/) version 5.0.201+
+
 ### console apps projects
 
 ```bash
