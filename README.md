@@ -26,10 +26,6 @@ functions or send suggestions for tools that Engineers may find useful.
 
 * [.Net](https://dotnet.microsoft.com/) version 5.0.201+
 
-### Dependencies Octave/Matlab
-
-* [Matlab](https://la.mathworks.com/products/matlab.html) version 8.0.2+
-
 ### Dependencies python
 
 The following packages are required:
