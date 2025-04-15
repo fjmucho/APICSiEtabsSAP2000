@@ -46,10 +46,6 @@ The following packages are required:
 * [pandas](https://pandas.pydata.org/) version 1.2.3+
 * [PyQt6](https://wiki.qt.io/Qt_6.0_Release) version 6.0.3+
 
-## Contact Details
-- [facebook](https://www.facebook.com/fjmucho)
-- [linkedin](https://www.linkedin.com/in/fjmucho70b2639b/)
-
 ## Citar.
 
 - 
