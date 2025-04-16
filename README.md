@@ -29,7 +29,7 @@ El proyecto está organizado en las siguientes carpetas:
 ├── 📁 srcCshar     # Source code using C# for API
 ├── 📁 srcOctave    # Source code using Octave for API
 ├── 📁 srcPython    # Source code using Python for API
-└── README.md       # Este archivo
+└── README.md
 ```
 
 ### Current Capabilities
