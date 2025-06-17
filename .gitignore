@@ -42,8 +42,6 @@ Thumbs.db
 
 # python files
 ######################
-*.pyc
-*.pyo
 *~
 *.bak
 desktop.ini
@@ -51,6 +49,8 @@ inno/
 *.p
 *.iss
 *dato.txt
+# *.pyc
+*.pyo
 *plotModel.py
 # *.ipynb
 
