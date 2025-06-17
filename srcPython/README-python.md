@@ -29,9 +29,19 @@ git clone https://github.com/fjmucho/APICSiEtabsSAP2000.git
 cd APICSiEtabsSAP2000
 ```
 
+## Errores comues
+ir a la ruta y ejecutar como administrador los siguentes ejecutables: UnRegisterETABS.exe y RegisterETABS.exe y en caso de SAP200 serian: UnregisterSAP2000.exe y RegisterSAP2000.exe.
+```cmd
+> C:\Program Files\Computers and Structures\SAP2000 26\UnRegisterETABS.exe
+
+> C:\Program Files\Computers and Structures\ETABS 20\UnregisterSAP2000.exe
+```
+seguidamente se debe probar la coneccion a la aplicacion.
+
 ## References
 - 1. github [sap2000](https://github.com/kandluis/sap2000)
 - 2. github [etabs_api](https://github.com/ebrahimraeyat/etabs_api)
 - 3. github [pytabs](https://github.com/mitchell-tesch/pytabs)
 - 4. https://pypi.org/project/E030/
-- 5.
+- 5. https://www.youtube.com/playlist?list=PLtZFoNK7ZKaUgc2i3g98xXLsl-uWw0mgn
+- 6. https://www.facebook.com/StructuralTech.py/videos/1890176388442498/

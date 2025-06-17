@@ -51,7 +51,8 @@ inno/
 *.p
 *.iss
 *dato.txt
-*.ipynb
+*plotModel.py
+# *.ipynb
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

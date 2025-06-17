@@ -4,11 +4,12 @@
 | ----------------------------------------------------------------------- 
 | Cercha o armadura. - ejecucion en API de CSi
 | -----------------------------------------------------------------------
-| description: EL script esta preparado para que se ejecute tanto en SAP200 y ETABS
-|              y es posible ejecutar con algunas modificaciones en otras como BRIDGE 
-|              y SAFE, ............................................................. 
-|              Si gustas puedes crear una copia en github en una rama secundaria y 
-|              actualizar a tu gusto con las otras aplicaciones de CSiAPI.
+| description: 
+|   EL script esta preparado para que se ejecute tanto en SAP200 y ETABS
+|   y es posible ejecutar con algunas modificaciones en otras como BRIDGE 
+|   y SAFE, ............................................................. 
+|   Si gustas puedes crear una copia en github en una rama secundaria y 
+|   actualizar a tu gusto con las otras aplicaciones de CSiAPI.
 | ref: C:\\Program Files\\Computers and Structures\\ETABS 17\\CSI API ETABS v1.chm
 |      youtube: ....
 | author: fjmucho0@gmail.com
@@ -16,6 +17,7 @@
 | date updated: 06/07/2024
 """
 
+import ctypes
 import os, sys
 import numpy as np
 import comtypes.client
@@ -95,8 +97,7 @@ elif (connect_to == 2): # ETABS
     }
 # elif (connect_to == 3): # SAFE
 #     name_app="SAFE"
-#     conn = {
-#     }
+#     conn = {}
 else: 
     print("No tenemos soporte aun")
     sys.exit()
@@ -136,6 +137,7 @@ except (OSError, comtypes.COMError):
 
 smodel = connect_to_app.SapModel;
 
+ctypes.windll.user32.MessageBoxW(0, f"Conectado a {name_app} API", "CSiAPI", 0x40 | 0x1)
 
 #initialize model
 smodel.InitializeNewModel()
@@ -185,28 +187,28 @@ Restraint_ii = [True, True, False, False, False, False]
 Restraint_jj = [True, True, False, False, False, False]
 StartValues = [0,0,0,0,0,0]
 EndValues = [0,0,0,0,0,0]
-for i in range(25):
+for i in range(ne):
     response = smodel.FrameObj.SetReleases(str(i+1), Restraint_ii, Restraint_jj, StartValues, EndValues)
 
 #refresh view, update (initialize) zoom
 response = smodel.View.RefreshView(0, False)
 
 #add load patterns
-LTYPE = 8
-response = smodel.LoadPatterns.Add('1', LTYPE, 0, True)
+LTYPE = 8 # LTYPE_OTHER=8
+response = smodel.LoadPatterns.Add('c1', LTYPE, 0, True)
 
 #assign loading for load pattern 1
 PointLoadValue = [1,-10,-10,0,0,0]
-response = smodel.PointObj.SetLoadForce('1', '1', PointLoadValue)
+response = smodel.PointObj.SetLoadForce('1', 'c1', PointLoadValue)
 #assign loading for load pattern 2
 PointLoadValue = [0,-10,-10,0,0,0]
-response = smodel.PointObj.SetLoadForce('2', '1', PointLoadValue)
+response = smodel.PointObj.SetLoadForce('2', 'c1', PointLoadValue)
 #assign loading for load pattern 3
 PointLoadValue = [0.5,0,0,0,0,0]
-response = smodel.PointObj.SetLoadForce('3', '1', PointLoadValue)
+response = smodel.PointObj.SetLoadForce('3', 'c1', PointLoadValue)
 #assign loading for load pattern 4
 PointLoadValue = [0.6,0,0,0,0,0]
-response = smodel.PointObj.SetLoadForce('6', '1', PointLoadValue)
+response = smodel.PointObj.SetLoadForce('6', 'c1', PointLoadValue)
 
 #full path to the model, set it to the desired path of your model
 APIPath = 'C:\\CSiAPI_Examples'
@@ -220,6 +222,7 @@ response = smodel.File.Save(ModelPath)
 #run model (this will create the analysis model)
 response = smodel.Analyze.RunAnalysis()
 
+ctypes.windll.user32.MessageBoxW(0, f"Ejecucion terminado", "CSiAPI", 64)
 
 #initialize for results
 Axial = np.zeros(25)
@@ -227,7 +230,7 @@ Reactions = np.zeros([4,3])
 Displacement = np.zeros([10,3])
 
 response = smodel.Results.Setup.DeselectAllCasesAndCombosForOutput()
-response = smodel.Results.Setup.SetCaseSelectedForOutput('1')
+response = smodel.Results.Setup.SetCaseSelectedForOutput('c1')
 
 NumberResults = 0
 Obj = []
@@ -252,7 +255,7 @@ U1, U2, U3, U4, U5, U6 = [], [], [], [], [], []
 for i in range(ne):
     [NumberResults, Obj, ObjSta, ELm, ElmSta, ACase, StepType, StepNum, P, V2, V3, T, M2, M3, response] = \
     smodel.Results.FrameForce(str(i+1), ObjectElm, NumberResults, Obj, ObjSta, Elm, ElmSta, ACase, StepType, StepNum, P, V2, V3, T, M2, M3)
-    Axial[i]=P[0]
+    Axial[i] = P[0]
 for i in range(4):
     [NumberResults, Obj, Elm, ACase, StepType, StepNum, F1, F2, F3, R1, R2, R3, response] = \
     smodel.Results.JointReact(str(i+7), Element, NumberResults, Obj, Elm, ACase, StepType, StepNum, F1, F2, R1, R2, R3)

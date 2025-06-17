@@ -5,7 +5,7 @@
     caso contrario: lanzar un menzaje 'no tienes intalada etabs']->en evaluacion para incluir o no!, este algoritmo
 
     algoritmo de instrucciones:
-        evaluar si, esta en ejecucion una instalcia de etabs
+        evaluar si, esta en ejecucion una instancia de etabs
             adjuntar la instancia a la existente
         caso contrario:
             busco la ultima verion instalada e intentar conectarme 
