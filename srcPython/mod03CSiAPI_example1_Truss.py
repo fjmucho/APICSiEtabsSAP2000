@@ -11,7 +11,7 @@
 |   Si gustas puedes crear una copia en github en una rama secundaria y 
 |   actualizar a tu gusto con las otras aplicaciones de CSiAPI.
 | ref: C:\\Program Files\\Computers and Structures\\ETABS 17\\CSI API ETABS v1.chm
-|      youtube: ....
+|      youtube: https://youtu.be/P6RO-GnQYiM=
 | author: fjmucho0@gmail.com
 | date created: 04/02/2021 
 | date updated: 06/07/2024
