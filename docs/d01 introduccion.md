@@ -2,11 +2,11 @@
 
 **Descripción**
 
-Esta Aplicacion es el inicio para, aprender a reducir el tiempo de generación de un 
+Esta Aplicacion es el inicio, para aprender a reducir el tiempo de generación de un 
 modelo, y ademas dá la ventaja de disminuir errores al momento de ingresar los 
 datos mediante técnicas basicas de modelamiento. Te guiaremos paso a paso a 
 configurar el entorno de desarrollo y te damos una ayuda para crear tus 
-propias sincronizaciones con aplicacion con `ETABS`, `SAP2000`, `BRIDGE` con `Python`.
+propias sincronizaciones con aplicacion con `ETABS`, `SAP2000`, `BRIDGE`, `SAFE` con `Python`, `C#` y `Octave o Matlab`.
 
 ## Requerimientos.
 *	Capacitado en Programación y manejo de Programas de Ingeniería.

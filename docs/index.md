@@ -3,12 +3,12 @@
 
 **Introduccion.**
 
-* c
-* c
+* Descripccion a API-CSi
+* Requerimientos
 
-**Programación en `Python`**  
+**Fundamentos de Programación**  
 
-* Introducción a la programación en `Python`
+* Introducción a la programación
 * Programación Orientada a Objetos
 
 **Application Programming Interface ETABS**

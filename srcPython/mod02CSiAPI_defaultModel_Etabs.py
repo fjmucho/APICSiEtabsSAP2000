@@ -39,6 +39,7 @@
 # Imports
 import os
 import sys
+import ctypes
 import comtypes.client
 
 # Connecting
@@ -116,6 +117,10 @@ ret = SapModel.File.Save(ModelPath)
 #run model (this will create the analysis model)
 ret = SapModel.Analyze.RunAnalysis()
 
+ctypes.windll.user32.MessageBoxW(0, f"Ejecucion terminado", "CSiAPI", 64)
+if (ETABSObject.ApplicationExit(False)): print("ETABS, No se pudo cerrar")
+else: print("Se cerro con exito.")
+
 # deselect all cases and combos
 ret = SapModel.Results.Setup.DeselectAllCasesAndCombosForOutput
 
@@ -141,4 +146,9 @@ M3 = []
 
 ret = SapModel.Results.FrameForce(FrameName1, ObjectElm, NumberResults, Obj, ObjSta, Elm, ElmSta, LoadCase, StepType, StepNum, P, V2, V3, T, M2, M3)
 print(ret)
+
+smodel = None
+ETABSObject = None
+del smodel, ETABSObject, ret
+exit(-1)
 
