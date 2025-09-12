@@ -50,20 +50,19 @@ inno/
 *.iss
 *dato.txt
 # *.pyc
-*.pyo
+# *.pyo
 *plotModel.py
 # *.ipynb
-# no enviar al github
-*G08_e3_Análisis_Sísmico.ipynb
-*G08_e2_Datos_entrada.ipynb
-*G08_e1_Modelo_Parametrico_ETABS.ipynb
-*G08_Modelo_ETABS.py
-*G08_Extraccion_Resultados.py
+G08_e3_Análisis_Sísmico.ipynb
+G08_e2_Datos_entrada.ipynb
+G08_e1_Modelo_Parametrico_ETABS.ipynb
+G08_Modelo_ETABS.py
+G08_Extraccion_Resultados.py
 
-*mod03CSiAPI_example2 AEL Truss.ipynb
-*mod04CSiAPI_example3 AEL Lines Influence.ipynb
-*mod05CSiAPI_example4 AEL Frame estructurada.ipynb
-*mod07CSiAPI AnalisiModal y RespuestaEspectral.ipynb
+mod03CSiAPI_example2 AEL Truss.ipynb
+mod04CSiAPI_example3 AEL Lines Influence.ipynb
+mod05CSiAPI_example4 AEL Frame estructurada.ipynb
+mod07CSiAPI AnalisiModal y RespuestaEspectral.ipynb
 
 # Byte-compiled / optimized / DLL files
 # __pycache__/
