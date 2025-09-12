@@ -43,6 +43,3 @@ seguidamente se debe probar la coneccion a la aplicacion.
 - 2. github [etabs_api](https://github.com/ebrahimraeyat/etabs_api)
 - 3. github [pytabs](https://github.com/mitchell-tesch/pytabs)
 - 4. Librería para el Análisis Sísmico según NTE [E.030](https://pypi.org/project/E030/) de Perú
-- a. https://hakan-keskin.medium.com/
-- b. https://www.youtube.com/playlist?list=PLtZFoNK7ZKaUgc2i3g98xXLsl-uWw0mgn
-- c. https://www.facebook.com/StructuralTech.py/videos/1890176388442498/

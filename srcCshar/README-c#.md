@@ -59,3 +59,6 @@ Restore succeeded.
 > dotnet run
 Hello World!
 ````
+
+# Referencias.
+- [1] Diseño paramétrico de la estructura de una nave industrial (Tesis): https://www.dspace.espol.edu.ec/handle/123456789/52183

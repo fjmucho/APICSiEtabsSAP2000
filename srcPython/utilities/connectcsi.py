@@ -58,7 +58,7 @@ class ConnectCSiAPI(object):
         
         return (on_status, connect_to_app)
     
-    def attach_to_instance():
+    def attach_to_instance(self):
         """
         coneccion a etabs
         """

@@ -173,3 +173,5 @@ resUnit = SapModel.File.OpenFile(fileName)
 * [Python](https://www.python.org/)
 * []()
 * [ReFrameinc](https://reframeinc.com/afterburnercolumn/)
+* blog: https://hakan-keskin.medium.com/
+* videos: https://www.youtube.com/playlist?list=PLtZFoNK7ZKaUgc2i3g98xXLsl-uWw0mgn
