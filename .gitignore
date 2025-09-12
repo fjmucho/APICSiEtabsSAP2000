@@ -170,3 +170,10 @@ ENV/
 # securiry
 test/etabs_api/test.*
 
+
+# no enviar al github
+G08_e3_Análisis_Sísmico.ipynb
+G08_e2_Datos_entrada.ipynb
+G08_e1_Modelo_Parametrico_ETABS.ipynb
+G08_Modelo_ETABS.py
+G08_Extraccion_Resultados.py
