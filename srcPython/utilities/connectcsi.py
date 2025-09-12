@@ -22,9 +22,9 @@ class ConnectCSiAPI(object):
                 'app_helper': "ETABSv1.Helper"
                 }
         else: 
-            print("No tenemos soporte aun")
+            print(f"No se a implementado el soporte para la opcion {connect_to}")
             sys.exit()
-        print(self.app_csi)
+        print(f"Software: {self.app_csi}")
 
     def connect_default(self):
         connect_to_app = None;
@@ -69,7 +69,7 @@ class ConnectCSiAPI(object):
             print("Coneccion exitosa!.\nadjuntando a una instancia existente.")
             on_status = True
         except (OSError, comtypes.COMError):
-            print("No se encontró ninguna instancia en ejecución del programa(etabs).")
+            print(f"No se encontró ninguna instancia en ejecución del programa({self.app_csi}).")
         return (on_status, connect_to_app)
     
     def not_connect(self): 
