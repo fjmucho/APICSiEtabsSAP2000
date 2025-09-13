@@ -49,8 +49,7 @@ inno/
 *.p
 *.iss
 *dato.txt
-# *.pyc
-# *.pyo
+
 *plotModel.py
 *G08_Modelo_ETABS.py
 *G08_Extraccion_Resultados.py
@@ -68,7 +67,8 @@ mod07CSiAPI AnalisiModal y RespuestaEspectral.ipynb
 # __pycache__/
 *.py[cod]
 *$py.class
-
+*.pyo
+# *.pyc
 # C extensions
 *.so
 

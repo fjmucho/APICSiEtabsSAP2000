@@ -42,36 +42,44 @@ import sys
 import ctypes
 import comtypes.client
 
-# Connecting
-ETABSObject = comtypes.client.GetActiveObject("CSI.ETABS.API.ETABSObject")
+try:
+	# Connecting | coneccion
+	ETABSObject = comtypes.client.GetActiveObject("CSI.ETABS.API.ETABSObject")
+	print("Coneccion exitosa!.\nAdjuntando a una instancia existente.")
+except (OSError, comtypes.COMError):
+    print("No se encontró ninguna instancia en ejecución del programa(Etabs).")
+    sys.exit(-1)
+    
 SapModel = ETABSObject.SapModel
 
-# Unlocking model
+# Unlocking model | Abriendo modelo (hace referencia al candadito de etabs)
 SapModel.SetModelIsLocked(False)
 
-# Unit Preferences
+# Unit Preferences | Preferencias de Unidad
+# kN_m_C = 6 #kN_m_C
 N_mm_C = 6
 SapModel.SetPresentUnits(N_mm_C)
 
-# Materials
-SapModel.PropMaterial.SetMaterial("CONC35", 2)
+# Materials | materiales
+name_material="Conc35"
+SapModel.PropMaterial.SetMaterial(name_material, 2)
 
-SapModel.PropMaterial.SetOConcrete_1("CONC35", 35, False, 0, 1, 2, 0.0022, 0.0052, -0.1, 0, 0)
+SapModel.PropMaterial.SetOConcrete_1(name_material, 35, False, 0, 1, 2, 0.0022, 0.0052, -0.1, 0, 0)
 
-# Sections
+# Sections | secciones
 sectionName = 'ConcSection'
-SapModel.PropFrame.SetRectangle(sectionName, "CONC35", 400, 400)
+SapModel.PropFrame.SetRectangle(sectionName, name_material, 400, 400)
 
-# Patterns
+# Patterns | patrones
 ret = SapModel.LoadPatterns.Add("LCASE1", 2)
 print(ret)
 ret = SapModel.LoadPatterns.Add("LCASE2", 3)
 
-# Cases
+# Cases | casos de carga
 ret = SapModel.LoadCases.StaticLinear.SetCase("LCASE1")
 ret = SapModel.LoadCases.StaticLinear.SetCase("LCASE1")
 
-# Combinations
+# Combinations | combinaciones
 
 ret = SapModel.RespCombo.Add("COMB1", 0)
 
@@ -85,7 +93,7 @@ CName = []
 SF = []
 SapModel.RespCombo.GetCaseList("COMB1", NumberItems, CNameType, CName, SF)
 
-# Elements
+# Elements | elementos
 FrameName1 = ' '
 FrameName2 = ' '
 FrameName3 = ' '
@@ -100,7 +108,7 @@ Restraint = [True, True, True, True, True, True]
 [PointName1, PointName2, ret] = SapModel.FrameObj.GetPoints(FrameName1, PointName1, PointName2)
 ret = SapModel.PointObj.SetRestraint(PointName1, Restraint)
 
-# Joint forces
+# Joint forces | junta de fuerzas
 
 Value = (100.0, 0.0, 0.0, 0.0, 0.0, 0.0)
 Value2 = [0.0, 200.0, 0.0, 0.0, 0.0, 0.0]
@@ -109,7 +117,8 @@ ret = SapModel.PointObj.SetLoadForce("4", "LCASE1", Value, True, 'Global', 0)
 ret = SapModel.PointObj.SetLoadForce('3', 'LCASE2', Value2, True, 'Global', 0)
 
 
-#save model
+# save model | guardar nuestro modelo
+# ModelPath = "C:\\Users\\Kanwar Johal\\Desktop\\ReFrame\\tutorial3.edb"
 ModelPath = 'C:\\CSi_ETABS_API_Example\\tutorial3.edb'
 ret = SapModel.File.Save(ModelPath)
 
