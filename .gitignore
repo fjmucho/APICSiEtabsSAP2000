@@ -54,9 +54,8 @@ inno/
 *G08_Modelo_ETABS.py
 *G08_Extraccion_Resultados.py
 # *.ipynb
-/srcPython/G08_e1_Modelo_Parametrico_ETABS.ipynb
-/srcPython/G08_e2_Datos_entrada.ipynb
-/srcPython/G08_e3_Análisis_Sísmico.ipynb
+/srcPython/mod10CSiAPI e2a_Datos_entrada.ipynb
+/srcPython/mod09CSiAPI e1_Modelo_Parametrico.ipynb
 
 # /srcPython/mod03CSiAPI_example2 AEL Truss.ipynb
 # /srcPython/mod04CSiAPI_example3 AEL Lines Influence.ipynb
